@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-hv%964ks2r%l8gm%8m5f5j3rakyjxu@66!-nx6*0*(qesue-*4
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['127.0.0.1']
 
 
 # Application definition
@@ -56,7 +56,7 @@ ROOT_URLCONF = 'meal_project.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'templates')],
+        'DIRS': [BASE_DIR / 'meal_project/templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
